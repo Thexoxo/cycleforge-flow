@@ -1,6 +1,0 @@
-set $mod Mod4
-exec_always tmux attach -t flow || tmux new -s flow -d 'nvim ~/' 'split-window -h' 'split-window -v zsh'
-bindsym $mod+i exec ~/binaryninja/binaryninja
-bindsym $mod+o exec obsidian ~/Vault
-bindsym $mod+Return exec ghostty -e tmux attach -t flow
-bindsym $mod+Shift+q kill
